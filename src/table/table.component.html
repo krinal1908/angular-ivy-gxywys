@@ -1,0 +1,16 @@
+<div style="margin-top : 20px ; margin-bottom : 20px">
+  <table class="table table-stripped table-light">
+    <thead>
+      <th>Title</th>
+      <th>Release Date</th>
+      <th>Vote Average</th>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let data of searchData">
+        <td>{{ data.original_title }}</td>
+        <td>{{ data.release_date }}</td>
+        <td>{{ data.vote_average }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

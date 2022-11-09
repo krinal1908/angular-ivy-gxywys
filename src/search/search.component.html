@@ -1,0 +1,4 @@
+<div style="padding-top : 10px ; padding-bottom : 10px">
+  <input type="text" (keyup) = "search($event)">
+  <app-table *ngIf = "searchData.length > 0" [searchData] = "searchData"></app-table>
+</div>
